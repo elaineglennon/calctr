@@ -33,9 +33,9 @@ parseInt(document.getElementById("dailyTotal").innerHTML) + plusMinus;
      {
        calorieContent = 0;
      }  
-     else if(calorieContent > 3000)
+     else if(calorieContent > 4000)
      {
-       calorieContent = 3000;
+       calorieContent = 4000;
      }
      else
      {
