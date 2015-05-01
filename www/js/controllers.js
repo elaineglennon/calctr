@@ -4,6 +4,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('DishesCtrl', function($scope, $stateParams) {
-  $scope.dishesId = $stateParams.dishesId;
+  $scope.dishesId = $stateParams.dishesId; 
 });
 

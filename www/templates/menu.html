@@ -4,11 +4,11 @@
 			<ion-nav-back-button>
 			</ion-nav-back-button>
 
-			<ion-nav-buttons side="left"> <!--adds a navigation button to the left-->
+				<ion-nav-buttons side="left"> <!--adds a navigation button to the left-->
 	  
-				<button class="button button-icon  button-clear ion-navicon" menu-toggle="left"> <!--sets the icon for the navigation button-->
-				</button>
-			</ion-nav-buttons>
+					<button class="button button-icon  button-clear ion-navicon" menu-toggle="left"> <!--sets the icon for the navigation button-->
+					</button>
+				</ion-nav-buttons>
 		</ion-nav-bar>
    
 		<ion-nav-view name="menuContent"></ion-nav-view>
@@ -21,8 +21,8 @@
    
    <ion-content>
 		<ion-list>
-			<ion-item nav-clear menu-close href="#/app/dishes/1">
-					fruit
+			<ion-item nav-clear menu-close href="#/app/dishes/1"> <!-- -->
+					fruit and veg
 			</ion-item>
        
 			<ion-item nav-clear menu-close href="#/app/dishes/2">
@@ -43,6 +43,19 @@
 		
 			<ion-item nav-clear menu-close href="#/app/dishes/6">
 				Totals
+				<div>
+				<center>
+					<h2>
+						<div id="dailyTotal">
+							0
+						</div>
+					</h2>
+				</center>
+			</div>
+			</ion-item>
+			
+			<ion-item nav-clear menu-close href="#/app/dishes/7">
+				Recommended Daily Intake
 			</ion-item>
 		
       </ion-list>
