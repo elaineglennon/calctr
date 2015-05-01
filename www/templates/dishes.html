@@ -16,11 +16,15 @@
 	
 	
 		<ion-list ng-if="dishesId == 2">
-		 <ion-item>
 	
-		 
-	
-	</ion-item>
+		  <ion-item>
+		  <div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 541')" href="#">
+			<img src="img/bacon.jpg">
+		  <h2> Bacon </h2>
+		  <p> 541 Calories  per 100g </p>  </a>
+		  <div class="item item-text-wrap">protien Group . Recommended to eat 3-5 servings per day. Eat generously </div>
+		  </div></ion-item>
+		  
 	
 		
 		<ion-list ng-if="dishesId == 3">
@@ -44,12 +48,22 @@
 	
 	</ion-item>
 	
-	<ion-list ng-if="dishesId == 6">
-	 <ion-item>
-	
-		 
-	
-	</ion-item>
+			 <ion-list ng-if="dishesId == 6">
+		 <ion-item><p> Total calories consumed </p>   <!--I used the reset button and add functions from the roll 
+dice app and changed them to suit-->
+		<div>
+		<center><h2>
+        <div id="dailyTotal">
+          0
+        </div>
+      </h2></center>
+	   <center>
+	  
+	   <button class="button button-small button-royal" 
+onclick="reset()">Reset</a></center>
+	  </div>
+	  </ion-item>
+	   		</ion-list>
 		
 	  </ion-content>
 	</ion-view>
