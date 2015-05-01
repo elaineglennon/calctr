@@ -27,26 +27,32 @@
 		  
 	
 		
-		<ion-list ng-if="dishesId == 3">
+			<ion-list ng-if="dishesId == 3">
 		 <ion-item>
-	
-		 
-	
-	</ion-item>
-	
-		 <ion-list ng-if="dishesId == 4">
-	   <ion-item>
-	
-		 
-	
-	</ion-item>
-	
-	<ion-list ng-if="dishesId == 5">
-	 <ion-item>
-	
-		 
-	
-	</ion-item>
+		  <div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 54')" href="#">
+			<img src="img/milk.jpg">
+		  <h2> Milk </h2>
+		  <p> 54 Calories  per 100g </p>  </a>
+		  <div class="item item-text-wrap"> Protien Group . Recommended to eat 2-3 servings per day. Eat in Moderation </div>
+		  </div></ion-item>
+		  
+	 <ion-list ng-if="dishesId == 4">
+	  
+		   <ion-item>
+		  <div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 111')" href="#">
+			<img src="img/rice.jpg">
+		  <h2>  Rice </h2>
+		  <p> 111 Calories  per 100g </p>  </a>
+		  <div class="item item-text-wrap"> Carbohydrates Group . Recommended to eat 5-7 servings per day. Eat Generously </div>
+		  </div></ion-item>
+	 <ion-list ng-if="dishesId == 5">
+		 <ion-item>
+		  <div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 300')" href="#">
+			<img src="img/ice.jpg">
+		  <h2> Ice cream </h2>
+		  <p> 300 Calories  per 100g </p>  </a>
+		  <div class="item item-text-wrap"> Fats/sugars/salt . Maximum 1 serving per day. Eat Sparingly </div>
+		  </div></ion-item>
 	
 			 <ion-list ng-if="dishesId == 6">
 		 <ion-item><p> Total calories consumed </p>   <!--I used the reset button and add functions from the roll 
