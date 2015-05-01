@@ -4,7 +4,7 @@
 			<ion-nav-back-button>
 			</ion-nav-back-button>
 
-				<ion-nav-buttons side="left"> <!--adds a navigation button to the left-->
+				<ion-nav-buttons side="left"> <!--adds a navigation button on the left-->
 	  
 					<button class="button button-icon  button-clear ion-navicon" menu-toggle="left"> <!--sets the icon for the navigation button-->
 					</button>
@@ -16,12 +16,13 @@
 
   <ion-side-menu side="left">
 		<ion-header-bar class="bar-stable">
-			<h1 class="title">Food Groups </h1>
+			<h1 class="title">Food Groups </h1> <!--Sets the title of the menu-->
+    </ion-header-bar>
 		</ion-header-bar>
    
    <ion-content>
 		<ion-list>
-			<ion-item nav-clear menu-close href="#/app/dishes/1"> <!-- -->
+			<ion-item nav-clear menu-close href="#/app/dishes/1">  <!-- shows all the foods in the category-->
 					fruit and veg
 			</ion-item>
        
@@ -41,20 +42,12 @@
 				snacks
 			</ion-item>
 		
-			<ion-item nav-clear menu-close href="#/app/dishes/6">
-				Totals
-				<div>
-				<center>
-					<h2>
-						<div id="dailyTotal">
-							0
-						</div>
-					</h2>
-				</center>
-			</div>
+			<ion-item nav-clear menu-close href="#/app/dishes/6"> <!-- links to the total calories consumed -->
+				Total
+		
 			</ion-item>
 			
-			<ion-item nav-clear menu-close href="#/app/dishes/7">
+			<ion-item nav-clear menu-close href="#/app/dishes/7"> <!-- healthy eating information -->
 				Recommended Daily Intake
 			</ion-item>
 		

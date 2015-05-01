@@ -1,17 +1,20 @@
 <ion-view view-title="Dishes" > 
   	 
+	 <!--Each list item is a button when pressed in increments the total by the value indicated.-->
+	 
 	 <ion-content>
-	
+	 
 		<ion-list ng-if="dishesId == 1">
 		
+ 
 			<ion-item>
-				<div class="list card">
-					<a class="item item-avatar" "button button-royal" onclick="incDec('+52')" href="#">
-						<img src="img/apple-fruit.jpg">
-							<h2>Apple</h2>
-								<p>52 Calories per 100g</p> 
+				<div class="list card"> 	<!-- creates a card , this is the same for each food item-->
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+52')" href="#"> <!-- adds a picture, and button that increments when pressed , same for each card-->
+						<img src="img/apple-fruit.jpg"> <!-- locates image-->
+							<h2>Apple</h2> <!--item title-->
+								<p>52 Calories per 100g</p> <!-- displays calorie content-->
 					</a>
-						<div class="item item-text-wrap">Fruit Group . Recommended to eat 2-4 servings per day. Eat generously </div>
+						<div class="item item-text-wrap">Fruit Group . Recommended to eat 2-4 servings per day. Eat generously </div> <!-- displays description this is the same for each food item-->
 				
 				</div>
 			</ion-item>
@@ -21,7 +24,7 @@
 				<div class="list card"> 
 					<a class="item item-avatar" "button button-royal" onclick="incDec('+47')" href="#">
 						<img src="http://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg">
-							<h2>Orange</h2>  <!-- this does not display  on my phone ,so  I replaced with a link to a picture -->
+							<h2>Orange</h2>  <!-- this does not display  on my phone ,so  I replaced with a link to a picture instead of my www/images file -->
 								<p>47 Calories per 100g</p> 
 					</a>
 									<div class="item item-text-wrap">Fruit Group . Recommended to eat 2-4 servings per day. Eat generously </div>
@@ -243,11 +246,11 @@
 			<ion-item><p> Total calories consumed </p>   <!--The reset button and add functions are based on the roll dice app -->
 			<div>
 				<center>
-					<h2>
-						<div id="dailyTotal">
+					<h1>
+						<div id="dailyTotal">  <!--Starts at 0 is incremented when food icon is pressed-->
 							0
 						</div>
-					</h2>
+					</h1>
 				</center>
 			</div>
 			
@@ -264,7 +267,7 @@
 		 <ion-list ng-if="dishesId == 7">
 		 <ion-item>
 		 
-		 <div class="list card">
+		 <div class="list card">  <!--Dietary information-->
 					<div class="item item-image">
 						<img src="img/pyramid.jpg">
 					</div
