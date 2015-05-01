@@ -1,6 +1,6 @@
-	<ion-view view-title="Dishes" >
+<ion-view view-title="Dishes" >
 	
-	  <ion-content>
+	 <ion-content>
 	  	
 		<ion-list ng-if="dishesId == 1">
 	
@@ -199,33 +199,62 @@
 		</ion-list>
 		
 		
-		
-	 <ion-list ng-if="dishesId == 5">
-		 <ion-item>
-		  <div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 300')" href="#">
-			<img src="img/ice.jpg">
-		  <h2> Ice cream </h2>
-		  <p> 300 Calories  per 100g </p>  </a>
-		  <div class="item item-text-wrap"> Fats/sugars/salt . Maximum 1 serving per day. Eat Sparingly </div>
-		  </div></ion-item>
 	
-			 <ion-list ng-if="dishesId == 6">
-		 <ion-item><p> Total calories consumed </p>   <!--I used the reset button and add functions from the roll 
-dice app and changed them to suit-->
-		<div>
-		<center><h2>
-        <div id="dailyTotal">
-          0
-        </div>
-      </h2></center>
-	   <center>
-	  
-	   <button class="button button-small button-royal" 
-onclick="reset()">Reset</a></center>
-	  </div>
-	  </ion-item>
-	   		</ion-list>
+		 <ion-list ng-if="dishesId == 5">
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 300')" href="#">
+					<img src="img/ice.jpg">
+						<h2> Ice cream </h2>
+							<p> 300 Calories  per 100g </p>  </a>
+								<div class="item item-text-wrap"> Fats/sugars/salt . Maximum 1 serving per day. Eat Sparingly </div>
+				</div>
+			</ion-item>
 		
-	  </ion-content>
-	</ion-view>
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 536')" href="#">
+					<img src="img/cri.jpg">
+						<h2> Crisps </h2>
+							<p> 536 Calories  per 100g </p>  </a>
+								<div class="item item-text-wrap"> Fats/sugars/salt . Maximum 1 serving per day. Eat Sparingly </div>
+				</div>
+			</ion-item>
+		  
+		
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+ 546')" href="#">
+					<img src="img/choc.jpg">
+						<h2> Chocolate </h2>
+							<p> 546 Calories  per 100g </p>  </a>
+								<div class="item item-text-wrap"> Fats/sugars/salt . Maximum 1 serving per day. Eat Sparingly </div>
+				</div>
+			</ion-item>
+			
+		</ion-list>	
+			
+	
+		 <ion-list ng-if="dishesId == 6">
+			<ion-item><p> Total calories consumed </p>   <!--The reset button and add functions are based on the roll dice app -->
+			<div>
+				<center>
+					<h2>
+						<div id="dailyTotal">
+							0
+						</div>
+					</h2>
+				</center>
+			</div>
+			
+			<div>
+				<center>
+	  					<button class="button button-small button-royal" onclick="reset()">
+							Reset
+						</button>
+				</center>
+			</div>
+			</ion-item>
+		</ion-list>
+		
+	</ion-content>
+	  
+</ion-view>
 
