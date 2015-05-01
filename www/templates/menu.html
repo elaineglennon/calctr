@@ -8,7 +8,7 @@
 	  
         <button class="button button-icon  button-clear ion-navicon" menu-toggle="left"> <!--sets the icon for the navigation button-->
         </button>
-		 </ion-nav-buttons>
+      </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
@@ -17,6 +17,30 @@
     <ion-header-bar class="bar-stable">
       <h1 class="title">Food Groups </h1>
     </ion-header-bar>
-	<ion-content>
-	 </ion-content>
+    <ion-content>
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/dishes/1">
+         fruit
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/dishes/2">
+          meat
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/dishes/3">
+          dairy
+        </ion-item>
+		
+		<ion-item nav-clear menu-close href="#/app/dishes/4">
+          carbohydrates
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/dishes/5">
+          snacks
+        </ion-item>
+		
+		<ion-item nav-clear menu-close href="#/app/dishes/6">
+          Totals
+        </ion-item>
+		
+      </ion-list>
+    </ion-content>
   </ion-side-menu>
+</ion-side-menus>
